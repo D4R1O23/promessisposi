@@ -24,7 +24,7 @@ box-shadow: 0px px 10px 0px #000000;
   display: -ms-flex;
   display: flex;
   flex-direction: row;
-    margin: auto 0;
+  margin: auto 0;
 }
 .img-container{
   padding: 5px;
@@ -117,6 +117,7 @@ position: relative;
 .poster__img img{object-fit: cover;height:auto;}
 footer{height: 50px;background: #4682B4; color:#4682B4;text-align: center;padding-top:15px }
 @media (max-width: 768px) {
+  .wrapper{width: 100%;overflow-x: hidden;}
   .poster{
     flex-wrap:  wrap;
     height: auto;
@@ -130,10 +131,10 @@ footer{height: 50px;background: #4682B4; color:#4682B4;text-align: center;paddin
   .intestazione::after{
     top:100px;
   }
-  .menu{flex-wrap: wrap}
+  .menu{flex-wrap: wrap; max-width: 100%}
   .title-project{font-size: 25px;}
   .subtitle{font-size: 18px;}
-  .img{transform: scale(0.6);}
+  .img{display: none;}
   .nomi-space{display: none;}
   footer{color: #fff !important;}
 }
